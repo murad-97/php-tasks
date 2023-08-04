@@ -1,0 +1,23 @@
+form {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 75px;
+}
+
+.limiter-menu-desktop {
+  position: fixed;
+  height: auto;
+  top: 0px;
+}
+.h2 {
+  margin: 20px 0 !important;
+}
+label {
+  font-size: 22px;
+}
+.add {
+  margin: 15px 0 !important;
+}
+input button {
+  background-color: blueviolet;
+}
