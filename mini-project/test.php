@@ -28,20 +28,20 @@
             echo "<div class='container-login100-form-btn'>";
             echo "<div class='wrap-login100-form-btn'>";
             echo "<div class='login100-form-bgbtn'></div>";
-            echo "<button class='login100-form-btn'>";
-            echo "Try again";
-            echo "</button>";
+            echo "<a href='login.php' class='login100-form-btn' style ='text-decoration:none; font-size:20px'>";
+            echo "try again";
+            echo "</a>";
             echo "</div>";
             echo "</div>";
         }
     } else {
         echo "<h1>incorrect email and password</h1>";
-        echo "<div class='container-login100-form-btn'>";
+        echo "<div class='container-login100-form-btn' style = 'width:50%'>";
         echo "<div class='wrap-login100-form-btn'>";
         echo "<div class='login100-form-bgbtn'></div>";
-        echo "<button class='login100-form-btn'>";
-        echo "log in";
-        echo "</button>";
+        echo "<a href='login.php' class='login100-form-btn' style ='text-decoration:none; font-size:20px'>";
+        echo "login";
+        echo "</a>";
         echo "</div>";
         echo "</div>";
     }
