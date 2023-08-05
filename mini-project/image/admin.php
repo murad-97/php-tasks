@@ -2,6 +2,7 @@
 session_start();
 if (!isset($_SESSION["cards"])) {
     $_SESSION["cards"] = array();
+    // $_POST["Delete"] = null;
 }
 ?>
 <!DOCTYPE html>
@@ -50,12 +51,12 @@ if (!isset($_SESSION["cards"])) {
                     <!-- Menu desktop -->
                     <div class="menu-desktop">
                         <ul class="main-menu">
-                            <li class="active-menu">
-                                <a href="index.html">Home</a>
+                            <li>
+                                <a href="../cards.php">Home</a>
                             </li>
 
-                            <li>
-                                <a href="product.html">Shop</a>
+                            <li class="active-menu">
+                                <a href="product.html">products</a>
                             </li>
 
                             <li class="label1" data-label1="hot">
@@ -200,7 +201,7 @@ if (!isset($_SESSION["cards"])) {
     </div>
 
     <!-- <img src="./images/about-01.jpg" alt=""> -->
-    <form class="form" method="POST" action="#" enctype="multipart/form-data">
+    <form class="form hi" method="POST" action="#" enctype="multipart/form-data">
         <h2 class="h2">ADD your product</h2>
         <label for="">product name</label>
         <input class="form-control form-control-lg" type="text" name="product-name" Required>
@@ -220,10 +221,24 @@ if (!isset($_SESSION["cards"])) {
                 <th scope='col'>DESCRIPTION</th>
                 <th scope='col'>IMAGE</th>
                 <th scope='col'>PRICE</th>
+                <th scope='col'>Delete</th>
             <tr>
                 <?php
+                // echo $_GET["Delete"];
+                // echo "<br>";
+                
+                if (isset($_POST["Delete"])) {
+                    foreach ($_SESSION["cards"] as $key => $value) {
+                        if ($key == $_POST["Delete"]) {
+                            // print_r($key);
+                            array_splice($_SESSION["cards"], $key, 1);
+                            // header("Location:admin.php");
+                
 
-
+                        }
+                    }
+                }
+                // print_r($_POST);
                 if ($_SESSION["status"] == true) {
                     if (isset($_POST["submit"])) {
                         $Name = $_FILES["product-image"]["name"];
@@ -255,7 +270,7 @@ if (!isset($_SESSION["cards"])) {
                     if ($_SESSION["cards"] != null) {
 
 
-                        foreach ($_SESSION["cards"] as $value) {
+                        foreach ($_SESSION["cards"] as $key => $value) {
 
                             echo "<tr>";
                             echo "<td>$value[0]</td>";
@@ -264,6 +279,7 @@ if (!isset($_SESSION["cards"])) {
                             echo "<img class = 'image' src= $value[2] >";
                             echo "</td>";
                             echo "<td>$value[3]</td>";
+                            echo "<td><form class = 'del' action='' method='POST'> <input type='submit' placeholder='hi' value='Delete' style='color: red' name='' > <input type='hidden' placeholder='hi' value=$key style='color: red' name='Delete' ></td>";
                             echo "</tr>";
                         }
 
@@ -273,6 +289,9 @@ if (!isset($_SESSION["cards"])) {
                 } else {
                     header("Location:./login.php");
                 }
+
+
+
                 ?>
         </table>
     </div>

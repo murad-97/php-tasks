@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/util copy.css">
+    <link rel="stylesheet" href="css/test.css">
 
     <title>Document</title>
 </head>
@@ -25,7 +26,7 @@
 
         } else {
             echo "<h1>incorrect email and password</h1>";
-            echo "<div class='container-login100-form-btn'>";
+            echo "<div class='container-login100-form-btn' style = 'width:50%'>";
             echo "<div class='wrap-login100-form-btn'>";
             echo "<div class='login100-form-bgbtn'></div>";
             echo "<a href='login.php' class='login100-form-btn' style ='text-decoration:none; font-size:20px'>";

@@ -55,7 +55,7 @@ session_start()
                             </li>
 
                             <li>
-                                <a href="product.html">Shop</a>
+                                <a href="image/admin.php">products</a>
                             </li>
 
                             <li class="label1" data-label1="hot">

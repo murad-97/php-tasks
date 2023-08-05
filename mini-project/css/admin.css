@@ -1,8 +1,8 @@
-form {
+/* .hi {
   width: 70%;
   margin: 0 auto;
   margin-top: 75px;
-}
+} */
 
 .limiter-menu-desktop {
   position: fixed;
@@ -38,4 +38,11 @@ th {
 .co {
   width: 40%;
   margin: auto;
+}
+.del {
+  margin: 0;
+  width: 100%;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
