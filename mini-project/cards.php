@@ -205,31 +205,6 @@ session_start()
     <section class="section-slide">
         <div class="wrap-slick1">
             <div class="slick1">
-                <div class="item-slick1" style="background-image: url(images/slide-01.jpg);">
-                    <div class="container h-full">
-                        <div class="flex-col-l-m h-full p-t-100 p-b-30 respon5">
-                            <div class="layer-slick1 animated visible-false" data-appear="fadeInDown" data-delay="0">
-                                <span class="ltext-101 cl2 respon2">
-                                    Women Collection 2023
-                                </span>
-                            </div>
-
-                            <div class="layer-slick1 animated visible-false" data-appear="fadeInUp" data-delay="800">
-                                <h2 class="ltext-201 cl2 p-t-19 p-b-43 respon1">
-                                    NEW SEASON
-                                </h2>
-                            </div>
-
-                            <div class="layer-slick1 animated visible-false" data-appear="zoomIn" data-delay="1600">
-                                <a href="product.html"
-                                    class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04">
-                                    Shop Now
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
                 <div class="item-slick1" style="background-image: url(images/slide-02.jpg);">
                     <div class="container h-full">
                         <div class="flex-col-l-m h-full p-t-100 p-b-30 respon5">
@@ -307,44 +282,44 @@ session_start()
 
 
                 <?php
-if (isset($_SESSION["cards"])) {
-    foreach ($_SESSION["cards"] as $value) {
-        echo '<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">';
+                if (isset($_SESSION["cards"])) {
+                    foreach ($_SESSION["cards"] as $value) {
+                        echo '<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">';
 
-        echo '<div class="block2">';
-        echo '<div class="block2-pic hov-img0">';
-        echo "<img src=./image/$value[2] alt='IMG-PRODUCT'>";
+                        echo '<div class="block2">';
+                        echo '<div class="block2-pic hov-img0">';
+                        echo "<img src=./image/$value[2] alt='IMG-PRODUCT'>";
 
-        echo "<a href='#' class='block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1'>";
-        echo "$value[1]";
-        echo "</a>";
-        echo "</div>";
+                        echo "<a href='#' class='block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1'>";
+                        echo "$value[1]";
+                        echo "</a>";
+                        echo "</div>";
 
-        echo "<div class='block2-txt flex-w flex-t p-t-14'>";
-        echo "<div class='block2-txt-child1 flex-col-l'>";
-        echo "<p>";
-        echo "$value[0]";
-        echo "</p>";
+                        echo "<div class='block2-txt flex-w flex-t p-t-14'>";
+                        echo "<div class='block2-txt-child1 flex-col-l'>";
+                        echo "<p>";
+                        echo "$value[0]";
+                        echo "</p>";
 
-        echo "<span class='stext-105 cl3'>";
-        echo "$" . "$value[3]";
-        echo "</span>";
-        echo "</div>";
+                        echo "<span class='stext-105 cl3'>";
+                        echo "$" . "$value[3]";
+                        echo "</span>";
+                        echo "</div>";
 
-        echo "<div class='block2-txt-child2 flex-r p-t-3'>";
-        echo "<a href='#' class='btn-addwish-b2 dis-block pos-relative js-addwish-b2'>";
-        echo "<img class='icon-heart1 dis-block trans-04' src='images/icons/icon-heart-01.png' alt='ICON'>";
-        echo "<img class='icon-heart2 dis-block trans-04 ab-t-l' src='images/icons/icon-heart-02.png' alt='ICON'>";
-        echo "</a>";
-        echo "</div>";
-        echo "</div>";
-        echo "</div>";
-        echo "</div>";
-    }
-}else{
-    echo"no product to show";
-}
-?>
+                        echo "<div class='block2-txt-child2 flex-r p-t-3'>";
+                        echo "<a href='#' class='btn-addwish-b2 dis-block pos-relative js-addwish-b2'>";
+                        echo "<img class='icon-heart1 dis-block trans-04' src='images/icons/icon-heart-01.png' alt='ICON'>";
+                        echo "<img class='icon-heart2 dis-block trans-04 ab-t-l' src='images/icons/icon-heart-02.png' alt='ICON'>";
+                        echo "</a>";
+                        echo "</div>";
+                        echo "</div>";
+                        echo "</div>";
+                        echo "</div>";
+                    }
+                } else {
+                    echo "no product to show";
+                }
+                ?>
 
 
 

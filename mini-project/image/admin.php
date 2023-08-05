@@ -34,149 +34,150 @@ if (!isset($_SESSION["cards"])) {
 </head>
 
 <body>
-   
-    <div class="container-menu-desktop">
-        <!-- Topbar -->
+    <header>
+        <div class="container-menu-desktop">
+            <!-- Topbar -->
 
 
-        <div class="wrap-menu-desktop">
-            <nav class="limiter-menu-desktop container">
+            <div class="wrap-menu-desktop">
+                <nav class="limiter-menu-desktop container">
 
-                <!-- Logo desktop -->
-                <a href="#" class="logo">
-                    <img src="../images/icons/logo-01.png" alt="IMG-LOGO">
-                </a>
-
-                <!-- Menu desktop -->
-                <div class="menu-desktop">
-                    <ul class="main-menu">
-                        <li class="active-menu">
-                            <a href="index.html">Home</a>
-                        </li>
-
-                        <li>
-                            <a href="product.html">Shop</a>
-                        </li>
-
-                        <li class="label1" data-label1="hot">
-                            <a href="shoping-cart.html">Features</a>
-                        </li>
-
-                        <li>
-                            <a href="blog.html">Blog</a>
-                        </li>
-
-                        <li>
-                            <a href="about.html">About</a>
-                        </li>
-
-                        <li>
-                            <a href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Icon header -->
-                <div class="wrap-icon-header flex-w flex-r-m">
-                    <div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 js-show-modal-search">
-                        <i class="zmdi zmdi-search fa-solid fa-cart-shopping"></i>
-                    </div>
-
-                    <div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart"
-                        data-notify="2">
-                        <i class="zmdi zmdi-shopping-cart"></i>
-                    </div>
-
-                    <a href="#" class="dis-block icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti"
-                        data-notify="0">
-                        <i class="zmdi zmdi-favorite-outline"></i>
+                    <!-- Logo desktop -->
+                    <a href="#" class="logo">
+                        <img src="../images/icons/logo-01.png" alt="IMG-LOGO">
                     </a>
-                </div>
-            </nav>
-        </div>
-    </div>
 
-    <!-- Header Mobile -->
-    <div class="wrap-header-mobile">
-        <!-- Logo moblie -->
-        <div class="logo-mobile">
-            <a href="index.html"><img src="../images/icons/logo-01.png" alt="IMG-LOGO"></a>
+                    <!-- Menu desktop -->
+                    <div class="menu-desktop">
+                        <ul class="main-menu">
+                            <li class="active-menu">
+                                <a href="index.html">Home</a>
+                            </li>
+
+                            <li>
+                                <a href="product.html">Shop</a>
+                            </li>
+
+                            <li class="label1" data-label1="hot">
+                                <a href="shoping-cart.html">Features</a>
+                            </li>
+
+                            <li>
+                                <a href="blog.html">Blog</a>
+                            </li>
+
+                            <li>
+                                <a href="about.html">About</a>
+                            </li>
+
+                            <li>
+                                <a href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Icon header -->
+                    <div class="wrap-icon-header flex-w flex-r-m">
+                        <div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 js-show-modal-search">
+                            <i class="zmdi zmdi-search fa-solid fa-cart-shopping"></i>
+                        </div>
+
+                        <div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart"
+                            data-notify="2">
+                            <i class="zmdi zmdi-shopping-cart"></i>
+                        </div>
+
+                        <a href="#"
+                            class="dis-block icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti"
+                            data-notify="0">
+                            <i class="zmdi zmdi-favorite-outline"></i>
+                        </a>
+                    </div>
+                </nav>
+            </div>
         </div>
 
-        <!-- Icon header -->
-        <div class="wrap-icon-header flex-w flex-r-m m-r-15">
-            <div class="icon-header-item cl2 hov-cl1 trans-04 p-r-11 js-show-modal-search">
-                <i class="zmdi zmdi-search"></i>
+        <!-- Header Mobile -->
+        <div class="wrap-header-mobile">
+            <!-- Logo moblie -->
+            <div class="logo-mobile">
+                <a href="index.html"><img src="../images/icons/logo-01.png" alt="IMG-LOGO"></a>
             </div>
 
-            <div class="icon-header-item cl2 hov-cl1 trans-04 p-r-11 p-l-10 icon-header-noti js-show-cart"
-                data-notify="2">
-                <i class="zmdi zmdi-shopping-cart"></i>
-            </div>
-
-            <a href="#" class="dis-block icon-header-item cl2 hov-cl1 trans-04 p-r-11 p-l-10 icon-header-noti"
-                data-notify="0">
-                <i class="zmdi zmdi-favorite-outline"></i>
-            </a>
-        </div>
-
-        <!-- Button show menu -->
-        <div class="btn-show-menu-mobile hamburger hamburger--squeeze">
-            <span class="hamburger-box">
-                <span class="hamburger-inner"></span>
-            </span>
-        </div>
-    </div>
-
-
-    <!-- Menu Mobile -->
-    <div class="menu-mobile">
-        <ul class="main-menu-m">
-            <li>
-                <a href="index.html">Home</a>
-
-                <span class="arrow-main-menu-m">
-                    <i class="fa fa-angle-right" aria-hidden="true"></i>
-                </span>
-            </li>
-
-            <li>
-                <a href="product.html">Shop</a>
-            </li>
-
-            <li>
-                <a href="shoping-cart.html" class="label1 rs1" data-label1="hot">Features</a>
-            </li>
-
-            <li>
-                <a href="blog.html">Blog</a>
-            </li>
-
-            <li>
-                <a href="about.html">About</a>
-            </li>
-
-            <li>
-                <a href="contact.html">Contact</a>
-            </li>
-        </ul>
-    </div>
-
-    <!-- Modal Search -->
-    <div class="modal-search-header flex-c-m trans-04 js-hide-modal-search">
-        <div class="container-search-header">
-            <button class="flex-c-m btn-hide-modal-search trans-04 js-hide-modal-search">
-                <img src="../images/icons/icon-close2.png" alt="CLOSE">
-            </button>
-
-            <form class="wrap-search-header flex-w p-l-15">
-                <button class="flex-c-m trans-04">
+            <!-- Icon header -->
+            <div class="wrap-icon-header flex-w flex-r-m m-r-15">
+                <div class="icon-header-item cl2 hov-cl1 trans-04 p-r-11 js-show-modal-search">
                     <i class="zmdi zmdi-search"></i>
-                </button>
-                <input class="plh3" type="text" name="search" placeholder="Search...">
-            </form>
+                </div>
+
+                <div class="icon-header-item cl2 hov-cl1 trans-04 p-r-11 p-l-10 icon-header-noti js-show-cart"
+                    data-notify="2">
+                    <i class="zmdi zmdi-shopping-cart"></i>
+                </div>
+
+                <a href="#" class="dis-block icon-header-item cl2 hov-cl1 trans-04 p-r-11 p-l-10 icon-header-noti"
+                    data-notify="0">
+                    <i class="zmdi zmdi-favorite-outline"></i>
+                </a>
+            </div>
+
+            <!-- Button show menu -->
+            <div class="btn-show-menu-mobile hamburger hamburger--squeeze">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </div>
         </div>
-    </div>
+
+
+        <!-- Menu Mobile -->
+        <div class="menu-mobile">
+            <ul class="main-menu-m">
+                <li>
+                    <a href="index.html">Home</a>
+
+                    <span class="arrow-main-menu-m">
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </span>
+                </li>
+
+                <li>
+                    <a href="product.html">Shop</a>
+                </li>
+
+                <li>
+                    <a href="shoping-cart.html" class="label1 rs1" data-label1="hot">Features</a>
+                </li>
+
+                <li>
+                    <a href="blog.html">Blog</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Modal Search -->
+        <div class="modal-search-header flex-c-m trans-04 js-hide-modal-search">
+            <div class="container-search-header">
+                <button class="flex-c-m btn-hide-modal-search trans-04 js-hide-modal-search">
+                    <img src="../images/icons/icon-close2.png" alt="CLOSE">
+                </button>
+
+                <form class="wrap-search-header flex-w p-l-15">
+                    <button class="flex-c-m trans-04">
+                        <i class="zmdi zmdi-search"></i>
+                    </button>
+                    <input class="plh3" type="text" name="search" placeholder="Search...">
+                </form>
+            </div>
+        </div>
     </header>
 
     <!-- Cart -->
@@ -209,73 +210,76 @@ if (!isset($_SESSION["cards"])) {
         <input class="form-control form-control-lg" type="file" name="product-image" Required>
         <label for="">product price</label>
         <input class="form-control form-control-lg" type="product price" name="product-price" Required>
-        <input class=" add flex-c-m stext-101 cl0 size-103 bg1 bor1 hov-btn2 p-lr-15 trans-04" type="submit" name="submit"
-            value="add">
+        <input class=" add flex-c-m stext-101 cl0 size-103 bg1 bor1 hov-btn2 p-lr-15 trans-04" type="submit"
+            name="submit" value="add">
     </form>
-
-    <?php
-    if (isset($_POST["submit"])) {
-        $Name = $_FILES["product-image"]["name"];
-        $tempName = $_FILES["product-image"]["tmp_name"];
-        $folder = $Name;
-        move_uploaded_file($tempName, $folder);
-
-
-        $check = true;
-        foreach ($_SESSION["cards"] as $value) {
-            if ($_POST['product-name'] === $value[0] && $_POST['product-desc'] === $value[1] && $Name === $value[2] && $_POST['product-price'] === $value[3]) {
-                $check = false;
-            }
-        }
-
-        if ($check) {
-
-            array_push(
-                $_SESSION["cards"],
-                array(
-                    $_POST['product-name'],
-                    $_POST['product-desc'],
-                    $Name,
-                    $_POST['product-price'],
-                )
-            );
-        }
-    }
+    <div>
+        <table class='table container'>
+            <tr>
+                <th scope='col'>NAME</th>
+                <th scope='col'>DESCRIPTION</th>
+                <th scope='col'>IMAGE</th>
+                <th scope='col'>PRICE</th>
+            <tr>
+                <?php
 
 
+                if ($_SESSION["status"] == true) {
+                    if (isset($_POST["submit"])) {
+                        $Name = $_FILES["product-image"]["name"];
+                        $tempName = $_FILES["product-image"]["tmp_name"];
+                        $folder = $Name;
+                        move_uploaded_file($tempName, $folder);
 
 
+                        $check = true;
+                        foreach ($_SESSION["cards"] as $value) {
+                            if ($_POST['product-name'] === $value[0] && $_POST['product-desc'] === $value[1] && $Name === $value[2] && $_POST['product-price'] === $value[3]) {
+                                $check = false;
+                            }
+                        }
+
+                        if ($check) {
+
+                            array_push(
+                                $_SESSION["cards"],
+                                array(
+                                    $_POST['product-name'],
+                                    $_POST['product-desc'],
+                                    $Name,
+                                    $_POST['product-price'],
+                                )
+                            );
+                        }
+                    }
+                    if ($_SESSION["cards"] != null) {
 
 
+                        foreach ($_SESSION["cards"] as $value) {
 
+                            echo "<tr>";
+                            echo "<td>$value[0]</td>";
+                            echo "<td>$value[1]</td>";
+                            echo "<td>";
+                            echo "<img class = 'image' src= $value[2] >";
+                            echo "</td>";
+                            echo "<td>$value[3]</td>";
+                            echo "</tr>";
+                        }
 
-
-
-
-
-
-
-
-
-
-    if ($_SESSION["cards"] != null) {
-        echo "<table class='container'>";
-        foreach ($_SESSION["cards"] as $value) {
-
-            echo "<tr>";
-            echo "<td>$value[0]</td>";
-            echo "<td>$value[1]</td>";
-            echo "<td>";
-            echo "<img class = 'image' src= $value[2] >";
-            echo "</td>";
-            echo "<td>$value[3]</td>";
-            echo "</tr>";
-        }
-        echo "</table>";
-    } else {
-        echo "no pruduct to show";
-    }
-    ?>
+                    } else {
+                        echo "no pruduct to show";
+                    }
+                } else {
+                    header("Location:./login.php");
+                }
+                ?>
+        </table>
+    </div>
+    <div class="co">
+        <a href="../cards.php" class=" see add flex-c-m stext-101 cl0 size-103 bg1 bor1 hov-btn2 p-lr-15 trans-04">over
+            view</a>
+    </div>
     <footer class="bg3 p-t-75 p-b-32">
         <div class="container">
             <div class="row">

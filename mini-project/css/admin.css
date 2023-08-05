@@ -8,6 +8,7 @@ form {
   position: fixed;
   height: auto;
   top: 0px;
+  left: 10%;
 }
 .h2 {
   margin: 20px 0 !important;
@@ -18,6 +19,23 @@ label {
 .add {
   margin: 15px 0 !important;
 }
-input button {
-  background-color: blueviolet;
+.add:hover {
+  color: white !important;
+  background-color: rgb(34, 34, 34) !important;
+}
+.image {
+  width: 100px !important;
+}
+table tr td,
+th {
+  vertical-align: middle !important;
+  text-align: center !important;
+}
+
+.see {
+  width: 100%;
+}
+.co {
+  width: 40%;
+  margin: auto;
 }
