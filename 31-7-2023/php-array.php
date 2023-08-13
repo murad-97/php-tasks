@@ -23,3 +23,14 @@ echo min($max_len);
 echo "<br>";
 
 
+ini_set("SMTP", "muradlashorman136@gmail.com");
+ini_set("smtp_port", 587);
+// the message
+$msg = "First line of text\nSecond line of text";
+
+// use wordwrap() if lines are longer than 70 characters
+$msg = wordwrap($msg,70);
+
+// send email
+mail("murad.alshorman97@gmail.com","My subject",$msg);
+?>
